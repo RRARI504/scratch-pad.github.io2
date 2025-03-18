@@ -15,7 +15,7 @@
 function length(string) {
     // YOUR CODE BELOW HERE //
 
-
+return string.length
     
     // YOUR CODE ABOVE HERE //
 }
@@ -25,10 +25,22 @@ function length(string) {
 /**
  * Given an input String, return a new String forced to lowercase.
  */
+/*
+I: a string parameter representing a word that is capitalized.
+O: the string paramaeter lower cased. 
+C:
+E: Should return null if the string is undefined. 
+
+*/
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-   
+    
+    if(string === ' '){
+        return null;
+    }
 
+
+  return string.toLowerCase()
 
     // YOUR CODE ABOVE HERE //
 }
