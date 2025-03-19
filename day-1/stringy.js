@@ -2,6 +2,8 @@
 
 'use strict';
 
+const { lowerCase } = require("lodash");
+
 /**
  * IN CLASS EXERCISE: stringy.js
  */
@@ -48,10 +50,16 @@ function toLowerCase(string) {
 /**
  * Given an input String, return a new String forced to uppercase.
  */
+/*
+I: a string
+O: should return the input string forced to uppercase 
+C:
+E:
+
+*/
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-
-
+    return string.toUpperCase();
 
     // YOUR CODE ABOVE HERE //
 }
@@ -69,8 +77,17 @@ function toUpperCase(string) {
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
+/*
+I: a string
+O: a new string of the input string with a dash where the space should be
+C:
+E: Must be enforced to lowercase
+
+
+*/
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
+   return string.split(' ').join("-").toLowerCase()
 
 
 
@@ -89,10 +106,18 @@ function toDashCase(string) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+/*
+I: a string and a single charachter 
+O: retrun the boolean value true if string begins with the charcter 
+C:
+E: Needs to be case sensitive
+*/
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-    
+  return string.toLowerCase().startsWith(char.toLowerCase())
+  //making sure the string is lowercased. statsWith returns boolean based on if the 
+  //substring is equal to the parameter value at the beginning of the string.
+  //make sure the char is lowercased 
 
     // YOUR CODE ABOVE HERE //
 }
@@ -112,6 +137,10 @@ function beginsWith(string, char) {
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
+    return string.toLowerCase().endsWith(char.toLowerCase())
+    //making sure the string is lowercased. statsWith returns boolean based on if the 
+  //substring is equal to the parameter value at the end of the string.
+  //make sure the char is lowercased 
 
 
     // YOUR CODE ABOVE HERE //
