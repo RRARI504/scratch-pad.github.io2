@@ -151,9 +151,16 @@ function endsWith(string, char) {
  *
  * TIP: What's the operator to concatenate two Strings?
  */
+/*
+I: two strings 
+O: the two input strings concatenated to one
+C:
+E:
+
+*/
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+return stringOne + stringTwo
 
 
     // YOUR CODE ABOVE HERE //
@@ -169,10 +176,17 @@ function concat(stringOne, stringTwo) {
  * TIP: This Function pulls out all the arguments passed to it and stores them
  *      in an Array called args.
  */
+/*
+I: any number of strings 
+O: return the input strings joined together
+C:
+E:
+*/
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
 
+    return args.join('')
 
     // YOUR CODE ABOVE HERE //
 }
@@ -186,8 +200,20 @@ function join(stringOne, stringTwo) {
  *
  * TIP: What property of the String do we need to compare?
  */
+/*
+I: two strings
+O: return the longest of the twi strings
+C:
+E:
+*/
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+    if(stringOne.length >= stringTwo.length){
+        return stringOne;
+
+    } else {
+        return stringTwo;
+    }
 
 
 
@@ -201,8 +227,24 @@ function longest(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+/*
+I: two strings 
+O: the number 1 if the first string is higer in alphabetical order and a -1 if not.
+C:
+E:
+*/
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+   if(stringOne === stringTwo){
+    return 0;
+
+   } else if(stringOne >= stringTwo){
+    return -1
+
+   } else{
+    return 1;
+   }
+
 
     // YOUR CODE ABOVE HERE //
 }
@@ -217,6 +259,16 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+
+    if(stringOne === stringTwo){
+        return 0;
+
+    } else if(stringOne > stringTwo){
+        return 1;
+
+    } else{
+        return -1;
+    }
 
 
 
