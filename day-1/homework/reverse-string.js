@@ -31,7 +31,9 @@ function reverseString(input) {
 
   for(var i = 0; i <= input.length; i++){
     return input.split('').reverse().join('')
-
+//.split splits the input sting into an array of characaters
+//.reverse reverses the order of elements in the array
+//.join joins the elements back together into a single string.
   }
   return newStr;
 
