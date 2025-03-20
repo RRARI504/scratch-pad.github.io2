@@ -10,9 +10,16 @@
  * Given an input Array, loop forward over the Array and print its values 
  * using console.log().
  */
+/*
+I: an array
+O: the values in the array printed 
+*/
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
-  
+  for(var i = 0; i < array.length; i++){
+    console.log(array[i])
+
+  }
   
   
   
@@ -26,6 +33,10 @@ function printArrayValues(array) {
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
   
+  for(var i = array.length - 1; i >= 0; i--){
+    console.log(array[i]);
+
+  }
   
   
   
