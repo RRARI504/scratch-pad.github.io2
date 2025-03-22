@@ -169,14 +169,14 @@ E: use console.log
 */
 function printObjectValuesInReverse(object) {
   // YOUR CODE BELOW HERE //
-  for(var i = object.length - 1; i >= 0; i--){
-    //use for loop to iterate backwards
-    if(object.hasOwnProperty(values)){
-      console.log(object[values])
 
-    }
+  var obj = Object.values(object)
+ 
+  for(let i = obj.length - 1; i >= 0; i --){
+    console.log(obj[i])
 
   }
+
   
   
   // YOUR CODE ABOVE HERE //

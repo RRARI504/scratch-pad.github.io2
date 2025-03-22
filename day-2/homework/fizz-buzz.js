@@ -10,8 +10,17 @@
  *  c. AND for the multiples of five print “Buzz”.
  *  d. FINALLY, for numbers which are multiples of both three and five print “FizzBuzz”.
 */
-function fizzBuzz() {
+function fizzBuzz(number) {
     // YOUR CODE GOES BELOW HERE //
+    
+
+    if(number % 3 === 0 && number % 5 === 0){
+        console.log("FizzBuzz");
+    } else if(number % 5 === 0){
+        console.log("Buzz");
+    } else{
+        console.log("Fizz");
+    }
 
 
 
