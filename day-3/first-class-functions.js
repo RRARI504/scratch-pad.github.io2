@@ -73,13 +73,12 @@ E:
 */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    let lower  = startsWith.toLowerCase();
-    return function(string){
-        if(string.charAt(0) === lower){
-            return true;
-        } else{
-            return false;
-        }
+    let lower  = startsWith.toLowerCase(); 
+    //made a variable lower that makes fucntion case insensitive
+    return function(string){ //returns a function that takes in a string
+        return string.toLowerCase().startsWith(lower)
+        //function returns the input string lowecased for case sensitivity
+        //and checks if string starts with the 'lower' character
 
     }
     
@@ -97,6 +96,11 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
+    let lower = endsWith.toLowerCase();
+    return function(string){
+        return string.toLowerCase().endsWith(lower)
+
+    }
     
     
     
@@ -111,11 +115,18 @@ function createEndsWithFilter(endsWith) {
  * TIP: You need to loop over the Strings, right? We need to pass each String to 
  * the modify Function, but we need to collect the results into some collection.
  */
+/*
+I: an array of strings and a function that modifies a string
+O: the array of strings modified 
+*/
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
+    return function(modified){
+        return strings.toUpperCase()
+
+    }
+
+
     
     // YOUR CODE ABOVE HERE //
 }
