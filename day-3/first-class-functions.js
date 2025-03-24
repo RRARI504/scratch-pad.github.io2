@@ -2,6 +2,8 @@
 
 'use strict';
 
+const { identity } = require("lodash");
+
 /**
  * IN CLASS EXERCISE: FIRST CLASS FUNCTIONS
  */
@@ -11,9 +13,22 @@
  * return a Function that tests whether a given value is greater than the 
  * base.
  */
+/*
+I: a base which can be a number or a string
+O: a function that test if a vale is greater than the base
+C:
+E:
+*/
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
+    return function(value){
+        if(value > base){
+            return true
+        }else{
+            return false;
+        }
+
+    }
    
     
     // YOUR CODE ABOVE HERE //
@@ -25,11 +40,20 @@ function createGreaterThanFilter(base) {
  * base. (test means return true or false)
  * 
  */
+/*
+I: a base that can be a string or number
+O: should return a function that tests if a given value is less than the base.
+*/
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
-  
-    
+  return function(value){
+    if(value < base){
+        return true
+    }else{
+        return false;
+    }
+
+  }
     
     // YOUR CODE ABOVE HERE //
 }
@@ -41,9 +65,23 @@ function createLessThanFilter(base) {
  * 
  * This function needs to be case insensitive.
  */
+/*
+I: a character which is a single character 
+O: a function that test whether a given string start with the input startsWith
+C:
+E:
+*/
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    
+    let lower  = startsWith.toLowerCase();
+    return function(string){
+        if(string.charAt(0) === lower){
+            return true;
+        } else{
+            return false;
+        }
+
+    }
     
     
     
