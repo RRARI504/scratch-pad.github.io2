@@ -161,14 +161,7 @@ E:
 */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-       for(var i = 0; i <= strings.length; i++){
-            let answer = test(strings[i])
-            if(answer !== strings[i]){
-                return false;
-            }
-
-       }
-       return true;
+         
     // YOUR CODE ABOVE HERE //
 }
 
