@@ -118,13 +118,23 @@ function createEndsWithFilter(endsWith) {
 /*
 I: an array of strings and a function that modifies a string
 O: the array of strings modified 
+C
+E
+the function takes an array of strings and a funciton which modifys the strings
+we need to return a new array with the strings modifyed.
 */
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    return function(modified){
-        return strings.toUpperCase()
+    
+    let collection = [];//empty array to hold modified strings
 
+    for(var i = 0; i < strings.length; i++){//iterate over the strings length
+        collection.push(modify(strings[i]))
+        //apply modify function to each string in the array and push
+        // the results to the output array.
     }
+    return collection;
+
 
 
     
@@ -143,12 +153,22 @@ function modifyStrings(strings, modify) {
  * 
  * TIP: You need to loop over the Strings, right? And pass them to the test?
  */
+/*
+I: an array of strings and a function that test the strings in some way 
+O: returns a boolean based on if the test passed, return true if all strings pass.
+C:
+E:
+*/
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+       for(var i = 0; i <= strings.length; i++){
+            let answer = test(strings[i])
+            if(answer !== strings[i]){
+                return false;
+            }
+
+       }
+       return true;
     // YOUR CODE ABOVE HERE //
 }
 
