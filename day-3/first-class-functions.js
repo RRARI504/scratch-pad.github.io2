@@ -161,6 +161,14 @@ E:
 */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
+
+    for(var i = 0; i < strings.length; i++){//for loop iterates of the array of strings 
+        if(!test(strings[i])){ //if the current iteration of the string in the array is not passing
+            //the test function return false. (test(strings[i])) calls test function on current iteration 
+            return false;//return false immediatletly because we are checking if ONE string doesnt pass
+        } 
+    }
+    return true;
          
     // YOUR CODE ABOVE HERE //
 }
