@@ -23,18 +23,16 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    let output = [];
+    let output = [];//output for number ranges
 
-   if(start <= end){
-    for(var i = start; i <= end; i++){
-       output.push(i)
+   if(start <= end){//if start is not greater than end
+    for(var i = start; i <= end; i++){//iterate positively 
+       output.push(i)//push current iteration to output
 
     }
-
-   }else{
-    for(var i = start; i >= end; i--){
-        output.push(i)
-
+   }else{ //else if start greater than end
+    for(var i = start; i >= end; i--){ //iterate backwards
+        output.push(i)//push current iteration to output
     }
    }
     return output;
