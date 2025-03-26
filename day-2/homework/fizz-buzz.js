@@ -13,7 +13,7 @@
 /*
 I: a list of numbers between 1 and 100
 O:  a string "fizz" for multiples of 3. a string "Buzz" for multiples of five 
-//and a string "FizzBuzz" for multiples of both 
+//and a string "FizzBuzz" for multiples of both 3 and 5 
 C:
 E:
 
@@ -22,7 +22,7 @@ E:
 function fizzBuzz(number) {
     // YOUR CODE GOES BELOW HERE //
     let results = []
-  for(i = 1; i<= number.length; i++){//for loop iterates through the list of numbers
+  for(i = 0; i <= number.length; i++){//for loop iterates through the list of numbers
     if(number % 3 === 0 && number % 5 === 0){
         array.push( "FizzBuzz");
     }else if(number % 3 === 0){
