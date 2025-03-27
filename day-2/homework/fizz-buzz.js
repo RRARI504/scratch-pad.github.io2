@@ -22,19 +22,19 @@ E:
 function fizzBuzz(number) {
   // YOUR CODE GOES BELOW HERE //
 
-  for(var i = 1; i <= 100; i++){
+  for(var i = 1; i <= 100; i++){//need to iterate through the list of numbers 1-100
 
-  if(i % 3 === 0 && i % 5 === 0){
+  if(i % 3 === 0 && i % 5 === 0){//if the current iteration is divisible by 3 and 5 return fizzbuzz
       console.log("FizzBuzz");
 
-  }else if(i % 3 === 0){
+  }else if(i % 3 === 0){//if only divisible by 3 return fizz
       console.log("Fizz");
 
-  }else if(i % 5 === 0){
+  }else if(i % 5 === 0){//if only divisible by 5 return buzz
       console.log("Buzz");
 
   }else{
-    console.log(i);
+    console.log(i); //else return just the current number 
   }
 
   }
