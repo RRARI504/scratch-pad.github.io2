@@ -35,22 +35,56 @@
 
 // YOUR CODE GOES BELOW HERE //
 function makeContact(id, nameFirst, nameLast) {
+    return {id, 
+            nameFirst, 
+            nameLast
+        }
     
-} 
-
-
+}
 
 function makeContactList() {
     /*
      * You need something here to hold contacts. See length api for a hint:
      */
     var contacts = [];
-    
+
     return {
         // we implemented the length api for you //
+
+      length: function(){
+        return contacts.length;
+      },
+
+      addContact: function(contact){
+        contacts.push(contact);
+      },
+
+      findContact: function(fullName){
+        //takes a full-name String, like 'Max Gaudin', and 
+        // returns   contact   if found in the contacts-list, or, 
+         // undefined if the fullName does not match any contacts in the list
+        var found = contacts.find(function(element){
+            if(){
+                
+            }
+
+        })
        
-    }
-}
+       }
+    
+
+
+
+      
+
+      
+    }           
+
+        
+}      
+  
+    
+
 
 
 
