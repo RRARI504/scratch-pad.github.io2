@@ -20,22 +20,26 @@ E:
 */
 
 function fizzBuzz(number) {
-    // YOUR CODE GOES BELOW HERE //
-    let results = []
-  for(i = 0; i <= number.length; i++){//for loop iterates through the list of numbers
-    if(number % 3 === 0 && number % 5 === 0){
-        array.push( "FizzBuzz");
-    }else if(number % 3 === 0){
-        array.push( "Fizz");
-    }else{
-        return "Buzz";
-    }
+  // YOUR CODE GOES BELOW HERE //
 
-  } 
-  return results;
+  for(var i = 1; i <= 100; i++){
+
+  if(i % 3 === 0 && i % 5 === 0){
+      console.log("FizzBuzz");
+
+  }else if(i % 3 === 0){
+      console.log("Fizz");
+
+  }else if(i % 5 === 0){
+      console.log("Buzz");
+
+  }else{
+    console.log(i);
+  }
+
+  }
+
 }
-
-
 
 
 
