@@ -74,13 +74,34 @@ function makeContactList() {
           }
           
         }
-      }
+      },
+
+      //removeContact(contact): takes a contact object to be removed from 
+     // the contact-list.
+     removeContact: function(contact){
+      contacts.splice(0, 1);
+
+     },
+
+     printAllContactNames: function(){
+
+
+     }
 
 
 
-      
 
-      
+
+     //  The printAllContactNames() Function should 
+      //    return a String formated with all the full-names of the separated 
+        //  with a line-break, like so:
+          
+        // myContacts.printAllContactNames(); // => Max Gaudin
+          //                                         John Fraboni
+            //                                       Kaelyn Chresfield
+           
+           //WARNING: To pass this test, the LAST full name should have NO
+          //new-line character added after it!
     }           
 
         
