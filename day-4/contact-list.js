@@ -95,8 +95,9 @@ function makeContactList() {
 
         names += i === 0 ? fullName: '\n' + fullName;
        // condition ? expressionIfTrue : expressionIfFalse;
-       //use teranary in place of iuf/else statement
-       //
+       //use teranary in place of if/else statement
+       //if i === 0 the current contact is equal to the first contact, increment the full name to the names string w/ no new line
+       // for the contacts that are greater than the first add a line break before adding full name to names string
 
 
 
