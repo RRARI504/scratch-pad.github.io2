@@ -63,15 +63,18 @@ function makeContactList() {
         //takes a full-name String, like 'Max Gaudin', and 
         // returns   contact   if found in the contacts-list, or, 
          // undefined if the fullName does not match any contacts in the list
-        var found = contacts.find(function(element){
-            if(){
-                
-            }
+         for(var i = 0; i <= contacts.length; i++){//iterate over the name
+          let contact = contacts[i]//variable sets contact object to current iteration in loop in contact list 
 
-        })
-       
-       }
-    
+          if(contact.nameFirst + ' ' + contact.nameLast === fullName){
+            //if contact object nameFirst and lastName = fullName 
+            return contact; //returns contact object
+          }else{
+            return undefined;
+          }
+          
+        }
+      }
 
 
 
