@@ -54,10 +54,13 @@ function makeContactList() {
       length: function(){
         return contacts.length;
       },
+      //length(): returns the number of contacts within the list.
 
       addContact: function(contact){
         contacts.push(contact);
       },
+      //addContact(contact): takes a contact object to be added to the 
+      //contact-list.
 
       findContact: function(fullName){
         //takes a full-name String, like 'Max Gaudin', and 
@@ -84,13 +87,28 @@ function makeContactList() {
      },
 
      printAllContactNames: function(){
+      var names = '' // needs to return a string so here is a variable set to an empty string to accumulate names.
+
+      for(var i = 0; i < contacts.length; i++){//for loop the goes through the contacts contact list.
+        let fullName = contacts[i].nameFirst + ' ' + contacts[i].nameLast; //variable sets fullName equal to the
+        //current iteration of contact and create the full name by combining first and last.
+
+        names += i === 0 ? fullName: '\n' + fullName;
+       // condition ? expressionIfTrue : expressionIfFalse;
+       //use teranary in place of iuf/else statement
+       //
+
+
+
+
+      }
+      return names;
+
+      
+      
 
 
      }
-
-
-
-
 
      //  The printAllContactNames() Function should 
       //    return a String formated with all the full-names of the separated 
